@@ -1,10 +1,10 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+    <!--<button ion-button menuToggle>-->
+      <!--<ion-icon name="menu"></ion-icon>-->
+    <!--</button>-->
     <ion-title>
-      Hajj Volunteer Expert
+      <div class="logo"><img src="../assets/imgs/hajjlogo.png"></div>
     </ion-title>
 
   </ion-navbar>
@@ -13,7 +13,7 @@
 <ion-content padding>
   <ion-content>
 
-    <div class="logo"><img src="../assets/imgs/hajjlogo.png"></div>
+
 
     <ion-list>
       <button ion-item *ngFor="let usr of users; let odd=odd; let even=even;" (click)="detail(usr.nid)" text-wrap class="row" [ngClass]="{ odd: odd, even: even }">
