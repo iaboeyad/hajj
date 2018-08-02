@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>HomeDetails</ion-title>
+    <ion-title>Postoin Description</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,10 +17,17 @@
   <ion-row *ngFor="let item of usersList">
     <ion-col center text-right>
     </ion-col>
-
+    <img src="{{this.item.field_image_categories1}}">
+    <h3>{{this.item.field_categories_term}}</h3>
     <h1>{{this.item.title}}</h1>
-    <p> {{ this.item.title }}</p>
+    <p> {{ this.item.field_description }}</p>
     <p [innerHTML]="this.item.body"></p>
+    <p [innerHTML]="this.item.field_description"></p>
+    <p> {{this.item.field_number_of_years_in_the_fie}} </p>
+<ion-row></ion-row>
+    <ion-row><button class="apply"> Apply </button></ion-row>
+
+
   </ion-row>
 
 </ion-content>

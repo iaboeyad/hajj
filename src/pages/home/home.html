@@ -4,7 +4,7 @@
       <!--<ion-icon name="menu"></ion-icon>-->
     <!--</button>-->
     <ion-title>
-      <div class="logo"><img src="../assets/imgs/hajjlogo.png"></div>
+      <div class="logo"><img class="logoclass" src="../assets/imgs/hajjlogo.png"></div>
     </ion-title>
 
   </ion-navbar>
@@ -17,7 +17,8 @@
 
     <ion-list>
       <button ion-item *ngFor="let usr of users; let odd=odd; let even=even;" (click)="detail(usr.nid)" text-wrap class="row" [ngClass]="{ odd: odd, even: even }">
-        <h2>{{usr.title}}</h2>
+       <div> <img src="{{usr.field_image_categories1}}"> <h2>{{usr.title}}</h2> </div>
+
         <p>{{usr.tite}}</p>
       </button>
     </ion-list>

@@ -18,4 +18,15 @@ page-home {
   .list-md .item-block .item-inner {
     border-bottom: none;
   }
+  img.logoclass {
+
+    max-width: 96px;
+  }
+
+  .item-md h2 {
+    display:  inline;
+    margin-top: 16px !important;
+    margin-left: 17px;
+    position:  absolute;
+  }
 }
