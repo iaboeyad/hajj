@@ -13,6 +13,7 @@ page-home {
   .item-inner {
     margin-top:  34px;
     margin-bottom:  34px;
+    border: none !important;
   }
 
   .list-md .item-block .item-inner {
@@ -20,7 +21,7 @@ page-home {
   }
   img.logoclass {
 
-    max-width: 96px;
+    max-width: 400px;
   }
 
   .item-md h2 {
@@ -29,4 +30,7 @@ page-home {
     margin-left: 17px;
     position:  absolute;
   }
+  //.toolbar-md {
+  //  height: 103px;
+  //}
 }
