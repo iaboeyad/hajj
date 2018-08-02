@@ -8,12 +8,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RestProvider } from '../providers/rest/rest';
 import { ListPage } from "../pages/list/list";
+import { HomeDetailsPage } from "../pages/home-details/home-details";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
+    HomeDetailsPage,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { ListPage } from "../pages/list/list";
     MyApp,
     HomePage,
     ListPage,
+    HomeDetailsPage,
   ],
   providers: [
     StatusBar,

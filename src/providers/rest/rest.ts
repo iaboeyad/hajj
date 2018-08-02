@@ -25,4 +25,14 @@ export class RestProvider {
       });
     });
   }
+  getUsersItem(nid: string) {
+    return new Promise(resolve => {
+      this.http.get(this.apiUrl+'/json/' + nid ).subscribe(data => {
+        resolve(data);
+        console.log(data,'test');
+      }, err => {
+        console.log(err,'error');
+      });
+    });
+  }
 }

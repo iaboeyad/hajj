@@ -6,4 +6,16 @@ page-home {
   img {
     max-width:  46px;
   }
+  .input-wrapper {
+    border: none !important;
+  }
+
+  .item-inner {
+    margin-top:  34px;
+    margin-bottom:  34px;
+  }
+
+  .list-md .item-block .item-inner {
+    border-bottom: none;
+  }
 }
