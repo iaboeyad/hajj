@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
+import { HomePage } from "../home/home";
 
 /**
  * Generated class for the AppliedPage page.
@@ -15,13 +16,20 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 })
 export class AppliedPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController,  public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AppliedPage');
   }
   onClose() {
-    this.viewCtrl.dismiss();
+    //this.viewCtrl.dismiss();
+    const placePageModal = this.modalCtrl.create(HomePage);
+    placePageModal.present();
+    placePageModal.onDidDismiss(
+      () => {
+
+      }
+    );
   }
 }

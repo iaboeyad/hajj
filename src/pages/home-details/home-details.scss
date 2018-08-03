@@ -9,7 +9,9 @@ page-home-details {
     text-align:  center;
   }
 
-  ion-item.applyitem.item.item-block.item-md {background-color: #008aaa;}
+  ion-item.applyitem {
+    background-color: #008aaa;
+  }
 
   button.apply {
     background-color: #008aaa;
