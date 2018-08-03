@@ -1,14 +1,21 @@
 page-home-details {
 
-  .apply {
-    display:  block;
-    border: solid;
-    border-color: #d1ae01;
-    border-radius:  14px;
-    margin-top:  14px;
-    padding-left: 31px;
-    padding-right:  32px;
-    position:  static;
+
+  img.imageD {
+    max-width:  130px;
+  }
+
+  .item-inner {
+    text-align:  center;
+  }
+
+  ion-item.applyitem.item.item-block.item-md {background-color: #008aaa;}
+
+  button.apply {
+    background-color: #008aaa;
+    color:  white;
+    font-size: 19px;
     text-align:  center;
   }
 }
+

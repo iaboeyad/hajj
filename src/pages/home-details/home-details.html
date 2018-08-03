@@ -17,17 +17,21 @@
   <ion-row *ngFor="let item of usersList">
     <ion-col center text-right>
     </ion-col>
-    <img src="{{this.item.field_image_categories1}}">
-    <h3>{{this.item.field_categories_term}}</h3>
-    <h1>{{this.item.title}}</h1>
-    <p> {{ this.item.field_description }}</p>
-    <p [innerHTML]="this.item.body"></p>
-    <p [innerHTML]="this.item.field_description"></p>
-    <p> {{this.item.field_number_of_years_in_the_fie}} </p>
-<ion-row></ion-row>
-    <ion-row><button class="apply"> Apply </button></ion-row>
+    <ion-item class="imagede"><img class="imageD" src="{{this.item.field_image_categories1}}">
+    </ion-item>
+
+    <ion-item><h3>{{this.item.field_categories_term}}</h3></ion-item>
+
+    <ion-item><h1>Title: {{this.item.title}}</h1></ion-item>
+
+    <ion-item class="item item-text-wrap"><p>Description: </p><p  style="white-space: normal;" [innerHTML]="this.item.field_description">   </p></ion-item>
+
+    <ion-item><p>Role:</p> <p  [innerHTML]="this.item.body"></p></ion-item>
+    <ion-item><p> {{this.item.field_number_of_years_in_the_fie}} </p></ion-item>
+    <ion-item class="applyitem"><button class="apply" (click)="openAppliedPage()"> Apply </button></ion-item>
 
 
   </ion-row>
 
 </ion-content>
+

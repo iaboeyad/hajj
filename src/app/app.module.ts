@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { RestProvider } from '../providers/rest/rest';
 import { ListPage } from "../pages/list/list";
 import { HomeDetailsPage } from "../pages/home-details/home-details";
+import { AppliedPage } from "../pages/applied/applied";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HomeDetailsPage } from "../pages/home-details/home-details";
     HomePage,
     ListPage,
     HomeDetailsPage,
+    AppliedPage,
   ],
   imports: [
     BrowserModule,
@@ -28,12 +30,16 @@ import { HomeDetailsPage } from "../pages/home-details/home-details";
     HomePage,
     ListPage,
     HomeDetailsPage,
+    AppliedPage
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RestProvider
+    RestProvider,
+    AppliedPage,
+
   ]
 })
 export class AppModule {}

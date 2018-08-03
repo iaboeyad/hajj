@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { RestProvider } from "../../providers/rest/rest";
+import { AppliedPage } from "../applied/applied";
 
 /**
  * Generated class for the HomeDetailsPage page.
@@ -17,7 +18,7 @@ import { RestProvider } from "../../providers/rest/rest";
 export class HomeDetailsPage {
   usersList: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public restProvider: RestProvider ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public restProvider: RestProvider, public modalCtrl: ModalController ) {
   }
   loaded: boolean;
   ionViewDidEnter() {
@@ -40,6 +41,16 @@ export class HomeDetailsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomeDetailsPage');
 
+  }
+  openAppliedPage() {
+    console.log("clicked")
+    const placePageModal = this.modalCtrl.create(AppliedPage);
+    placePageModal.present();
+    placePageModal.onDidDismiss(
+      () => {
+
+      }
+    );
   }
 
 }
